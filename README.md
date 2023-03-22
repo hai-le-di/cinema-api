@@ -9,14 +9,10 @@ Install PostgresSQL and create db
 ```
 git clone https://github.com/hai-le-di/cinema-api.git
 cd cinema_api
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-set POSTGRES_HOST=<your db hostname>
-set POSTGRES_DB=<your db name>
-set POSTGRES_USER=<your db username>
-set POSTGRES_PASSWORD=<your db user password>
-set SECRET_KEY=<your secret key>
+create .env file with environment variables listed in .env_sample
 python manage.py migrate
 python manage.py runserver
 ```
@@ -44,4 +40,12 @@ docker-compose build docker-compose up
 * Creating cinema halls
 * Adding movie sessions
 * Filtering movies and movie sessions
+
+## Test creds and token
+```
+email="testuser@example.com", 
+password="testpassword"
+
+token=
+```
 
