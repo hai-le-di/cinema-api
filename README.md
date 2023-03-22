@@ -45,7 +45,5 @@ docker-compose build docker-compose up
 ```
 email="testuser@example.com", 
 password="testpassword"
-
-token=
 ```
 
